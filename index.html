@@ -1,17 +1,33 @@
-<html>
-  <head>
-    <title>11a proba</title>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      body{
-        background-color:coral;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
     </style>
-  </head>
-  <body>
-    <h1>Ide kérem az elérhetőségeket:</h1>
-    <h2>CSak GitHub-os lapok!</h2>
-    <ul>
-      <li>Ide név és link kerüljön</li>
-    </ul>
-  body>
+    <title>Weboldal színválasztás</title>
+    <script>
+        function changeBackgroundColor() {
+            const colorSelector = document.getElementById('colorSelector');
+            const selectedColor = colorSelector.value;
+            document.body.style.backgroundColor = selectedColor;
+        }
+
+</script>
+</head>
+<body>
+    <h1>Válassz háttérszínt:</h1>
+    <select id="colorSelector">
+        <option value="lightblue">Világoskék</option>
+        <option value="lightgreen">Világoszöld</option>
+        <option value="lightpink">Világosrózsaszín</option>
+       
+    </select>
+    <button onclick="changeBackgroundColor()">Háttérszín változtatása</button>
+</body>
 </html>
+
